@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.body{
     background-color: rgb(95, 93, 93);
 }
 a{
@@ -32,6 +32,7 @@ h1{
 }
 .navbar{
     background-color: rgb(95, 93, 93);
+    border-bottom: solid 1px;
 }
 .nav-link{
     font-family: 'Akaya Telivigala', cursive;    
@@ -138,12 +139,12 @@ font-size: 35px;
     opacity: 75%;
 }  
 /*------------------> FOOTER <------------------*/
-.footer{     
-  background-color: rgb(95, 93, 93);
+.footer{   
+  position: absolute;
+  bottom: 0;  
   width: 100%;
   border-top: solid grey 1px;
-  align-items: end;
-  margin-top: 10px;
+  background-color: rgb(95, 93, 93); 
 }
 .footer p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
@@ -158,25 +159,27 @@ font-size: 35px;
 /*------------------> CONTACTO PAGINA <------------------*/
 .bodyContac{
     background-image: url("../IMAGENES/fast.jpg");
-    background-size: cover;
+    background-size:auto;    
 }
 .textDescripContac{    
-    color: aliceblue;    font-family: 'Russo One', sans-serif;
+    color: rgb(106, 176, 238);    font-family: 'Russo One', sans-serif;
     font-size: 20px;
     text-align: center;
     padding: 25px;
 }
-.sectionContacto{
-    /* max-height: max-content; */
-    text-align: center;
-    /* min-height: 450px; */
+.containerContact{
+    min-height: 45vh;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 50px 50px 50px;
+    margin: 80px ;
     display: flex;
-    
     justify-content: center;
 }
 .textDescripContac1{
     padding: 5;
 }
+/*--------------> ABOUT US <------------*/
 .videoYoutube{
     display: flex;
     justify-content: center;
@@ -184,4 +187,16 @@ font-size: 35px;
 .mapa{
     display: flex;
     justify-content: flex-end;
+}
+/*--------------> FORMULARIO LOG IN <------------*/
+.containerForm{
+    min-height: 45vh;
+    margin: 80px;  
+    background-color: rgb(95, 93, 93);    
+}
+.formItem{
+    margin: 10px;
+}
+.recuadroForm{
+    border: 2px solid rgba(5, 4, 3, 0.13);   
 }
